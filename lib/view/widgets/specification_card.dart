@@ -46,7 +46,7 @@ class SpecificationCard extends StatelessWidget {
                         secondtext:
                             'شهرک غرب، فاز 4، زرافشان، خیابان شجریان،پلاک 13، واحد 8'),
                     greyCard(context),
-                    EnterToFile()
+                    const EnterToFile()
                   ],
                 ),
               ),
