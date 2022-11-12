@@ -67,9 +67,9 @@ class SpecificationCard extends StatelessWidget {
           children: [
             greyelementRow(
                 context: context,
-                firstext: 'نام مشتری',
+                firstext: 'وضعیت پرونده',
                 asset: 'assets/file_state.png',
-                secondtext: 'محمدعلی مراد بیگ زاده'),
+                secondtext: 'تایید شده توسط نماینده'),
             greyelementRow(
                 context: context,
                 firstext: 'زمان بازدید',
@@ -139,7 +139,7 @@ class SpecificationCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: .57 * screenHeight,
+            width: .5 * screenHeight,
             child: Text(
               secondtext,
               maxLines: 2,
