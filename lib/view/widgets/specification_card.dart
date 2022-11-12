@@ -1,4 +1,5 @@
 import 'package:arisa/view/widgets/book_mark.dart';
+import 'package:arisa/view/widgets/enter_to_file.dart';
 import 'package:flutter/material.dart';
 
 class SpecificationCard extends StatelessWidget {
@@ -37,14 +38,15 @@ class SpecificationCard extends StatelessWidget {
                         secondtext: 'محمدعلی مراد بیگ زاده'),
                     elementRow(
                         context: context,
-                        firstext: 'نام مشتری',
-                        secondtext: 'محمدعلی مراد بیگ زاده'),
+                        firstext: 'تلفن همراه',
+                        secondtext: '09127825671'),
                     elementRow(
                         context: context,
                         firstext: 'محل بازدید',
                         secondtext:
                             'شهرک غرب، فاز 4، زرافشان، خیابان شجریان،پلاک 13، واحد 8'),
-                    greyCard(context)
+                    greyCard(context),
+                    EnterToFile()
                   ],
                 ),
               ),

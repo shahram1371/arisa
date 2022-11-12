@@ -1,4 +1,5 @@
 import 'package:arisa/view/widgets/book_mark.dart';
+import 'package:arisa/view/widgets/enter_to_file.dart';
 import 'package:arisa/view/widgets/id_text_field.dart';
 import 'package:arisa/view/widgets/slide_segment.dart';
 import 'package:arisa/view/widgets/specification_card.dart';
@@ -20,6 +21,7 @@ class ArisaBody extends StatelessWidget {
             IdTextField(),
             SizedBox(height: 16),
             SpecificationCard(),
+            SizedBox(height: 16),
           ],
         ),
       ),
