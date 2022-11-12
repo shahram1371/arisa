@@ -11,15 +11,17 @@ class ArisaBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xfff5f5f5),
-      child: ListView(
-        children: const [
-          SizedBox(height: 24),
-          SlideSegment(),
-          SizedBox(height: 16),
-          IdTextField(),
-          SizedBox(height: 16),
-          SpecificationCard(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: const [
+            SizedBox(height: 24),
+            SlideSegment(),
+            SizedBox(height: 16),
+            IdTextField(),
+            SizedBox(height: 16),
+            SpecificationCard(),
+          ],
+        ),
       ),
     );
   }
