@@ -1,4 +1,5 @@
 import 'package:arisa/view/widgets/arisa_app_bar.dart';
+import 'package:arisa/view/widgets/arisa_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         appBar: ArisaAppBar(),
+        body: ArisaBody(),
       ),
     );
   }
