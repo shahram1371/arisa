@@ -11,6 +11,13 @@ class IdTextField extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(5),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.grey,
+              blurRadius: 1,
+              offset: Offset(1, 2),
+            ),
+          ],
         ),
         child: TextField(
           textAlign: TextAlign.end,

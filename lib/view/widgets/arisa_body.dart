@@ -1,5 +1,7 @@
+import 'package:arisa/view/widgets/book_mark.dart';
 import 'package:arisa/view/widgets/id_text_field.dart';
 import 'package:arisa/view/widgets/slide_segment.dart';
+import 'package:arisa/view/widgets/specification_card.dart';
 import 'package:flutter/material.dart';
 
 class ArisaBody extends StatelessWidget {
@@ -15,6 +17,8 @@ class ArisaBody extends StatelessWidget {
           SlideSegment(),
           SizedBox(height: 16),
           IdTextField(),
+          SizedBox(height: 16),
+          SpecificationCard(),
         ],
       ),
     );
