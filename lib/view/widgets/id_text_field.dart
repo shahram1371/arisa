@@ -12,18 +12,20 @@ class IdTextField extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(5),
         ),
-        child: const TextField(
+        child: TextField(
           textAlign: TextAlign.end,
           decoration: InputDecoration(
-            prefixIcon: Icon(Icons.search),
+            prefixIcon: Image.asset(
+              'assets/search_icon.png',
+            ),
             hintText: "شناسه پرونده را وارد نمایید",
-            enabledBorder: OutlineInputBorder(
+            enabledBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
               borderSide: BorderSide(
                 color: Colors.white,
               ),
             ),
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0)),
               borderSide: BorderSide(color: Colors.white),
             ),
