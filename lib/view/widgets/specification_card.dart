@@ -167,8 +167,13 @@ class SpecificationCard extends StatelessWidget {
               const SizedBox(
                 width: 6,
               ),
-              Image.asset(
-                asset,
+              SizedBox(
+                width: 15,
+                height: 15,
+                child: Image.asset(
+                  asset,
+                  fit: BoxFit.fill,
+                ),
               )
             ],
           ),

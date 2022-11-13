@@ -105,13 +105,18 @@ class _ArisaBottomNavigationState extends State<ArisaBottomNavigation> {
                   boxShadows: [
                     PolygonBoxShadow(color: Colors.white, elevation: 2)
                   ],
-                  child: Image.asset(
-                    groupvalue == 0
-                        ? 'assets/send_icon.png'
-                        : groupvalue == 1
-                            ? 'assets/home_icon.png'
-                            : 'assets/file_state.png',
-                    color: const Color(0xff1C4870),
+                  child: SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: Image.asset(
+                      groupvalue == 0
+                          ? 'assets/send_icon.png'
+                          : groupvalue == 1
+                              ? 'assets/home_icon.png'
+                              : 'assets/file_state.png',
+                      color: const Color(0xff1C4870),
+                      // fit: BoxFit.fill,
+                    ),
                   ),
                 ),
               ),
@@ -141,8 +146,13 @@ class _ArisaBottomNavigationState extends State<ArisaBottomNavigation> {
       onTap: onTap,
       child: Column(
         children: [
-          Image.asset(
-            asset,
+          SizedBox(
+            width: 20,
+            height: 20,
+            child: Image.asset(
+              asset,
+              fit: BoxFit.fill,
+            ),
           ),
           const SizedBox(
             height: 5,
