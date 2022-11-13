@@ -46,7 +46,10 @@ class SpecificationCard extends StatelessWidget {
                         secondtext:
                             'شهرک غرب، فاز 4، زرافشان، خیابان شجریان،پلاک 13، واحد 8'),
                     greyCard(context),
-                    const EnterToFile()
+                    const EnterToFile(),
+                    const SizedBox(
+                      height: 16,
+                    )
                   ],
                 ),
               ),
@@ -93,7 +96,7 @@ class SpecificationCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: .59 * screenHeight,
+            width: .5 * screenHeight,
             child: Text(
               secondtext,
               maxLines: 2,
@@ -139,7 +142,7 @@ class SpecificationCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: .5 * screenHeight,
+            width: .4 * screenHeight,
             child: Text(
               secondtext,
               maxLines: 2,

@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        extendBody: false,
+        resizeToAvoidBottomInset: true,
         appBar: const ArisaAppBar(),
         body: ArisaBody(),
         bottomNavigationBar: const ArisaBottomNavigation(),

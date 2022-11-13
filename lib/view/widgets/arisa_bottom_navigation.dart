@@ -15,72 +15,67 @@ class _ArisaBottomNavigationState extends State<ArisaBottomNavigation> {
     return Stack(
       clipBehavior: Clip.none,
       children: <Widget>[
-        Container(
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-                topRight: Radius.circular(30), topLeft: Radius.circular(30)),
-            boxShadow: [
-              BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 10),
-            ],
-          ),
-          child: ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(30.0),
-              topRight: Radius.circular(30.0),
+        BottomAppBar(
+          color: const Color(0xffE5E5E5).withOpacity(0.005),
+          // color: Colors.white,
+          elevation: 0,
+          child: Container(
+            clipBehavior: Clip.hardEdge,
+            height: 60,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.black38.withOpacity(0.1),
+                    spreadRadius: 3,
+                    blurRadius: 3),
+              ],
             ),
-            child: BottomAppBar(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  height: 60,
-                  color: Colors.white,
-                  child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 40, vertical: 6),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        groupvalue == 0
-                            ? const SizedBox(
-                                width: 40,
-                                height: 30,
-                              )
-                            : btmIcons(
-                                text: 'ارسال نواقص',
-                                asset: 'assets/send_icon.png',
-                                onTap: () {
-                                  groupvalue = 0;
-                                  setState(() {});
-                                }),
-                        groupvalue == 1
-                            ? const SizedBox(
-                                width: 40,
-                                height: 30,
-                              )
-                            : btmIcons(
-                                text: 'خانه',
-                                asset: 'assets/home_icon.png',
-                                onTap: () {
-                                  groupvalue = 1;
-                                  setState(() {});
-                                }),
-                        groupvalue == 2
-                            ? const SizedBox(
-                                width: 40,
-                                height: 30,
-                              )
-                            : btmIcons(
-                                text: 'پرونده های من',
-                                asset: 'assets/file_state.png',
-                                onTap: () {
-                                  groupvalue = 2;
-                                  setState(() {});
-                                }),
-                      ],
-                    ),
-                  ),
-                ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 6),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  groupvalue == 0
+                      ? const SizedBox(
+                          width: 40,
+                          height: 30,
+                        )
+                      : btmIcons(
+                          text: 'ارسال نواقص',
+                          asset: 'assets/send_icon.png',
+                          onTap: () {
+                            groupvalue = 0;
+                            setState(() {});
+                          }),
+                  groupvalue == 1
+                      ? const SizedBox(
+                          width: 40,
+                          height: 30,
+                        )
+                      : btmIcons(
+                          text: 'خانه',
+                          asset: 'assets/home_icon.png',
+                          onTap: () {
+                            groupvalue = 1;
+                            setState(() {});
+                          }),
+                  groupvalue == 2
+                      ? const SizedBox(
+                          width: 40,
+                          height: 30,
+                        )
+                      : btmIcons(
+                          text: 'پرونده های من',
+                          asset: 'assets/file_state.png',
+                          onTap: () {
+                            groupvalue = 2;
+                            setState(() {});
+                          }),
+                ],
               ),
             ),
           ),

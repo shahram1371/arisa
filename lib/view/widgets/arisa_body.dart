@@ -26,7 +26,7 @@ class ArisaBody extends StatelessWidget {
                 IdTextField(),
                 SizedBox(height: 16),
                 SpecificationCard(),
-                SizedBox(height: 16),
+                SizedBox(height: 50),
               ],
             ),
           ),
