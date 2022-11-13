@@ -17,7 +17,6 @@ class _ArisaBottomNavigationState extends State<ArisaBottomNavigation> {
       children: <Widget>[
         BottomAppBar(
           color: const Color(0xffE5E5E5).withOpacity(0.005),
-          // color: Colors.white,
           elevation: 0,
           child: Container(
             clipBehavior: Clip.hardEdge,
@@ -94,15 +93,17 @@ class _ArisaBottomNavigationState extends State<ArisaBottomNavigation> {
           bottom: 20,
           child: Column(
             children: [
-              CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 26,
+              Container(
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.5)),
                 child: ClipPolygon(
                   sides: 6,
                   borderRadius: 5.0, // Defaults to 0.0 degrees
-
                   boxShadows: [
-                    PolygonBoxShadow(color: Colors.white, elevation: 1)
+                    PolygonBoxShadow(color: Colors.white, elevation: 2)
                   ],
                   child: Image.asset(
                     groupvalue == 0
